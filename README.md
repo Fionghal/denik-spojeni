@@ -83,11 +83,11 @@ Veškerá nastavení, seznamy a záznamy jsou ukládány lokálně do jednoho da
 * Tkinter
 * tkintermapview (pro mapu spojení)
   
-sudo apt install python3-tk
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 denik_spojeni.py
+* sudo apt install python3-tk
+* python3 -m venv venv
+* source venv/bin/activate
+* pip install -r requirements.txt
+* python3 denik_spojeni.py
 
 ## Licence
 
