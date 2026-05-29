@@ -7,6 +7,8 @@ Program je určen pro uživatele PMR, radioamatéry, SWL posluchače i další z
 ## Screenshot
 
 ![Dashboard](dashboard.png)
+![Mapa](mapa.png)
+![Záznam](zaznam.png)
 
 ---
 
