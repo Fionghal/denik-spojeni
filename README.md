@@ -1,6 +1,10 @@
 # Deník spojení
 
-Desktopová aplikace pro evidenci rádiových spojení, poslechů, testů a DX provozu.
+Desktopová aplikace pro evidenci rádiových spojení, poslechů, testů, DX provozu a experimentálního rádiového provozu.
+
+Program je určen pro uživatele PMR, radioamatéry, SWL posluchače i další zájemce o evidenci rádiových spojení.
+
+---
 
 ## Hlavní funkce
 
@@ -11,7 +15,17 @@ Desktopová aplikace pro evidenci rádiových spojení, poslechů, testů a DX p
 * Tisk filtrovaných záznamů
 * Přehledné uživatelské rozhraní ve stylu Propagation Monitor
 * Databáze SQLite
-* Správa vlastních seznamů:
+* Statistiky spojení
+* Evidence DX spojení
+* Evidence testů a experimentů
+* Mapa spojení s grafickým zobrazením protistanic
+* Správa vlastních seznamů a číselníků
+
+---
+
+## Správa seznamů
+
+Program umožňuje vytvářet a upravovat vlastní seznamy používané při evidenci spojení.
 
 ### Analogový provoz
 
@@ -34,6 +48,8 @@ Desktopová aplikace pro evidenci rádiových spojení, poslechů, testů a DX p
 * Zařízení
 * Antény
 
+---
+
 ## Podporované režimy
 
 ### Analogové
@@ -45,11 +61,13 @@ Desktopová aplikace pro evidenci rádiových spojení, poslechů, testů a DX p
 ### Digitální
 
 * DMR
-* C4FM
+* C4FM (Yaesu System Fusion)
 * D-STAR
 * M17
 * DIGI
 * DATA
+
+---
 
 ## Digitální záznamy
 
@@ -61,13 +79,25 @@ Program umožňuje evidovat například:
 * C4FM / Fusion
 * D-STAR
 * M17
+* APRS DATA
 * Další digitální provoz dle vlastního nastavení
+
+---
 
 ## Databáze
 
 Program používá databázi SQLite.
 
 Veškerá nastavení, seznamy a záznamy jsou ukládány lokálně do jednoho databázového souboru.
+
+Výhody:
+
+* Není potřeba databázový server
+* Snadné zálohování
+* Přenositelnost mezi počítači
+* Jednoduchá archivace dat
+
+---
 
 ## Systémové požadavky
 
@@ -79,20 +109,53 @@ Veškerá nastavení, seznamy a záznamy jsou ukládány lokálně do jednoho da
 
 ### Linux
 
-* Python 3.10+
+* Python 3.10 nebo novější
 * Tkinter
 * tkintermapview (pro mapu spojení)
-  
-* sudo apt install python3-tk
-* python3 -m venv venv
-* source venv/bin/activate
-* pip install -r requirements.txt
-* python3 denik_spojeni.py
+
+Instalace:
+
+```bash
+sudo apt install python3-tk
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 denik_spojeni.py
+```
+
+### macOS
+
+* Python 3.10 nebo novější
+* Tkinter
+* tkintermapview
+
+Instalace:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 denik_spojeni.py
+```
+
+---
+
+## Budoucí plánovaný vývoj
+
+* Rozšířené statistiky
+* Další exportní formáty
+* Vylepšená práce s mapou
+* Podpora dalších digitálních režimů
+* Modulární architektura programu
+
+---
 
 ## Licence
 
 MIT License
 
+---
+
 ## Autor
 
-Petr Molek
+Fionghal
