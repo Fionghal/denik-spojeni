@@ -4,6 +4,10 @@ Desktopová aplikace pro evidenci rádiových spojení, poslechů, testů, DX pr
 
 Program je určen pro uživatele PMR, radioamatéry, SWL posluchače i další zájemce o evidenci rádiových spojení.
 
+## Screenshot
+
+![Dashboard](dashboard.png)
+
 ---
 
 ## Hlavní funkce
@@ -90,7 +94,7 @@ Program používá databázi SQLite.
 
 Veškerá nastavení, seznamy a záznamy jsou ukládány lokálně do jednoho databázového souboru.
 
-Výhody:
+### Výhody
 
 * Není potřeba databázový server
 * Snadné zálohování
@@ -145,8 +149,8 @@ python3 denik_spojeni.py
 * Rozšířené statistiky
 * Další exportní formáty
 * Vylepšená práce s mapou
-* Podpora dalších digitálních režimů
 * Modulární architektura programu
+* Další podpora digitálních režimů
 
 ---
 
@@ -158,4 +162,6 @@ MIT License
 
 ## Autor
 
-Fionghal
+**Petr Molek**
+
+Nový Jičín, Česká republika
